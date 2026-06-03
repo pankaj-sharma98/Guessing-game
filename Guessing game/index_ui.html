@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guessing Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">Guessing Game</h1>
+
+    <section id="setup" class="card">
+      <form id="max-form">
+        <label for="max-input">Choose maximum number</label>
+        <input id="max-input" type="number" min="1" value="100" />
+        <div class="row">
+          <button id="start-btn" class="primary">Start Game</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="game-area" class="card hidden">
+      <div class="status">
+        <div id="feedback" class="info">Welcome — set a maximum and start.</div>
+        <div id="attempts">Attempts: 0</div>
+      </div>
+
+      <div class="controls">
+        <input id="guess-input" type="number" min="1" placeholder="Enter your guess" />
+        <button id="guess-btn" class="primary">Guess</button>
+      </div>
+
+      <div class="actions">
+        <button id="giveup-btn" class="muted">Give Up</button>
+        <button id="reset-btn" class="muted">Reset</button>
+      </div>
+    </section>
+
+    <footer class="credits">Made with ❤️ — Friendly UI</footer>
+  </main>
+
+  <script src="app_ui.js" defer></script>
+</body>
+</html>
